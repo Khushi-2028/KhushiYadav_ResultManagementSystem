@@ -135,7 +135,7 @@ KhushiYadav_ResultManagementSystem
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/KhushiYadav_ResultManagementSystem.git
+git clone https://github.com/Khushi-2028/KhushiYadav_ResultManagementSystem.git
 ```
 
 ## Step 2
