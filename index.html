@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Student Result Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Smart Student Result Management System</h1>
+
+<form id="studentForm">
+
+<h2>Student Details</h2>
+
+<label for="name" style="font-weight: bold;">Student Name:</label>
+<input type="text" id="name" placeholder="Student Name">
+
+<label for="roll" style="font-weight: bold;">Roll no:</label>
+ <input type="text" inputmode="numeric" maxlength="12" 
+ oninput="this.value=this.value.replace(/[^0-9]/g, '');"
+   id="roll" placeholder="e.g.,2099 or 3033222012099">
+
+<label for="course" style="font-weight: bold;">Course:</label>
+<select id="course">
+<option value="">Select Course</option>
+<option>MERN Stack</option>
+<option>Python Development</option>
+<option>Data Science</option>
+<option>Artificial Intelligence & Machine Learning</option>
+<option>Cyber Security</option>
+</select>
+
+<label for="semester" style="font-weight: bold;">Semester:</label>
+ <input type="text" inputmode="numeric" maxlength="1" id="semester"
+ oninput="this.value=this.value.replace(/[^0-9]/g, '');"
+             placeholder="e.g.,6 or 8">
+
+<label for="attendance" style="font-weight: bold;">Attendance:</label>
+ <input type="text" inputmode="numeric" maxlength="2" id="attendance"
+ oninput="this.value=this.value.replace(/[^0-9]/g, '');"
+ placeholder="e.g., 75">
+
+
+<h2>Subject Marks</h2>
+
+ <label for="sub1" style="font-weight: bold;">Subject 1:</label>
+<input type="text" inputmode="numeric" maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g, '');"
+  id="sub1"           placeholder="e.g.,75">
+
+ <label for="sub2" style="font-weight: bold;">Subject 2:</label>
+ <input type="text" inputmode="numeric" maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g, '');"
+   id="sub2"          placeholder="e.g.,75">
+
+
+ <label for="sub3" style="font-weight: bold;">Subject 3:</label>
+ <input type="text" inputmode="numeric" maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g, '');"
+    id="sub3"         placeholder="e.g.,75">
+
+ <label for="sub4" style="font-weight: bold;">Subject 4:</label>
+ <input type="text" inputmode="numeric" maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g, '');"
+       id="sub4"      placeholder="e.g.,75">
+
+ <label for="sub5" style="font-weight: bold;">Subject 5:</label>
+ <input type="text" inputmode="numeric" maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g, '');"
+     id="sub5"  placeholder="e.g.,75">
+
+<button type="button" onclick="generateResult()">
+Generate Result 
+</button>
+
+</form>
+
+<!--<div id="result" style="display:none;"></div>-->
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
